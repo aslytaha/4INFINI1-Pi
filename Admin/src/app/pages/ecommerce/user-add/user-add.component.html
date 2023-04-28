@@ -1,0 +1,101 @@
+
+<div _ngcontent-cid-c288="" class="row">
+    <div _ngcontent-cid-c288="" class="col-lg-6">
+        <div _ngcontent-cid-c288="" class="card">
+            <div _ngcontent-cid-c288="" class="card-body">
+                <h4 _ngcontent-cid-c288="" class="card-title mb-4">Add New User</h4>
+                    <form (ngSubmit)="onSubmit()" _ngcontent-cid-c288="" novalidate="" class="ng-untouched ng-pristine ng-valid">
+            <div _ngcontent-cid-c288="" class="col-lg-4">
+                <div _ngcontent-cid-c288="" class="mb-3">
+                    <label _ngcontent-cid-c288="" >ID </label>
+                    <input _ngcontent-cid-c288="" type="number"  name="cin" class="form-control" [(ngModel)]="user.cin">
+                </div>
+                <div _ngcontent-cid-c288="" class="col-md-6">
+                    <div _ngcontent-cid-c288="" class="mb-3">
+                        <label _ngcontent-cid-c288="" for="formrow-email-input">Email</label>
+                        <input _ngcontent-cid-c288="" type="email"  name="email"id="formrow-email-input" [(ngModel)]="user.email" class="form-group">
+                    </div>
+                </div>
+            </div> 
+                <div _ngcontent-cid-c288="" class="row">
+                    <div _ngcontent-cid-c288="" class="col-md-6">
+                        <div _ngcontent-cid-c288="" class="mb-3">
+                            <label _ngcontent-cid-c288="" for="formrow-firstname-input">First Name</label>
+                            <input _ngcontent-cid-c288="" name="firstName" type="text" id="formrow-firstname-input" [(ngModel)]="user.firstName" class="form-group">
+                        </div>
+                    </div>
+                    <div _ngcontent-cid-c288="" class="col-md-6">
+                        <div _ngcontent-cid-c288="" class="mb-3">
+                            <label _ngcontent-cid-c288="" for="formrow-lastname-input">Last Name</label>
+                            <input _ngcontent-cid-c288=""  name="lastName"type="text" id="formrow-lastname-input" [(ngModel)]="user.lastName" class="form-group">
+                        </div>
+                    </div>
+                  </div>
+
+                  <div _ngcontent-cid-c288="" class="row">
+                    <div _ngcontent-cid-c288="" class="col-md-6">
+                        <div _ngcontent-cid-c288="" class="mb-3">
+                            <label _ngcontent-cid-c288="" for="formrow-password-input">Password</label>
+                            <input _ngcontent-cid-c288=""  name="password"type="password" id="formrow-password-input" [(ngModel)]="user.password" class="form-group">
+                        </div>
+    
+                    </div>
+                   
+                  </div>
+            
+         <div _ngcontent-cid-c288="" class="row">
+                    <div _ngcontent-cid-c288="" class="col-lg-4">
+                        <div _ngcontent-cid-c288="" class="mb-3">
+                            <label _ngcontent-cid-c288="" >Phone Number</label>
+                            <input _ngcontent-cid-c288="" name="phone" type="number" [(ngModel)]="user.phone" class="form-group">
+                        </div>
+                    </div>
+                    
+    
+    
+    
+        </div>      
+            <div _ngcontent-cid-c288="" class="mb-3">
+                <label _ngcontent-cid-c288="" >Username</label>
+                <input _ngcontent-cid-c288="" name="username" type="text" [(ngModel)]="user.username" class="form-group" >
+            </div>
+         
+           
+           
+           
+            
+                
+            <div _ngcontent-cid-c288="" [hidden]="submitted">
+                <button _ngcontent-cid-c288="" type="submit" class="btn btn-primary w-md" (onclick)="newAdmin()"> Submit</button>
+            </div>
+                       </form>
+             </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- <div _ngcontent-cid-c288="" class="col-lg-4">
+                    <div _ngcontent-cid-c288="" class="mb-3">
+                        <label _ngcontent-cid-c288="" for="formrow-inputState">Phone Number</label>
+                        <select _ngcontent-cid-c288="" id="formrow-inputState" class="form-control">
+                            <option _ngcontent-cid-c288="" selected="">Choose...</option>
+                            <option _ngcontent-cid-c288="">...</option>
+                        </select>
+                    </div>
+                </div> -->
+                <!-- <div _ngcontent-cid-c288="" class="col-lg-4">
+                    <div _ngcontent-cid-c288="" class="mb-3">
+                        <label _ngcontent-cid-c288="" for="formrow-inputZip">Zip</label>
+                        <input _ngcontent-cid-c288="" type="text" id="formrow-inputZip" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div _ngcontent-cid-c288="" class="mb-3">
+                <div _ngcontent-cid-c288="" class="form-check">
+                    <input _ngcontent-cid-c288="" type="checkbox" id="gridCheck" class="form-check-input">
+                    <label _ngcontent-cid-c288="" for="gridCheck" class="form-check-label"> Check me out </label>
+                </div>
+            </div> -->
